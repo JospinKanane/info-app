@@ -1,14 +1,16 @@
 body, html {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: auto;
 }
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px 20px 40px;
-  background-color: cadetblue;
-  color: aliceblue;
+  color: cadetblue;
+  position: static;
 }
 .logo {
   height: 100px;
@@ -31,6 +33,37 @@ li:hover {
   color: red;
 }
 
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 40px 20px 40px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footerList {
+  display: flex;
+  gap: 60px;
+  list-style-type : none;
+  margin-right: 50px; 
+}
+.logo-footer{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.icons {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.icons:hover {
+  color: red;
+}
+
  @media all and (max-width: 500px){
   .header {
     display: flex;
@@ -40,6 +73,7 @@ li:hover {
     background-color: cadetblue;
     color: aliceblue;
     position: fixed;
+    width: 100%;
   }
   .logo {
     height: 50px;
@@ -57,5 +91,16 @@ li:hover {
   }
   li{
     cursor: pointer;
+  }
+  .footer{
+    width: 100%;
+  }
+  .footerList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    list-style-type : none;
+    
   }
  }
