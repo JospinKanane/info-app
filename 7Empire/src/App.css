@@ -1,7 +1,6 @@
 body, html {
   margin: 0;
   padding: 0;
-  background-color: ;
 }
 .header {
   display: flex;
@@ -27,3 +26,31 @@ body, html {
 li{
   cursor: pointer;
 }
+
+ @media all and (max-width: 500px){
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    background-color: cadetblue;
+    color: aliceblue;
+  }
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+  .navBar {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .navList {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type : none;
+  }
+  li{
+    cursor: pointer;
+  }
+ }
