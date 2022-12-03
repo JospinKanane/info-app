@@ -8,7 +8,6 @@ body, html {
   padding: 20px 40px 20px 40px;
   background-color: cadetblue;
   color: aliceblue;
-  position: fixed;
 }
 .logo {
   height: 100px;
