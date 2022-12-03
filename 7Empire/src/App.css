@@ -8,6 +8,7 @@ body, html {
   padding: 20px 40px 20px 40px;
   background-color: cadetblue;
   color: aliceblue;
+  position: fixed;
 }
 .logo {
   height: 100px;
@@ -35,6 +36,7 @@ li{
     padding: 10px 20px 10px 20px;
     background-color: cadetblue;
     color: aliceblue;
+    position: fixed;
   }
   .logo {
     height: 50px;
