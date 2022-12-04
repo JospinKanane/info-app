@@ -1,12 +1,12 @@
 import React from 'react'
-import logo from '../assets/logo-seven.png'
+import logofooter from '../assets/logo-seven.png'
 import {FaFacebook, FaTwitterSquare, FaInstagram, FaLinkedin, FaYoutube}  from 'react-icons/fa'
 
 const Footer = () => {
   return (
     <div className='footer'>
         <div className='logo-footer'>
-          <img src={logo} alt='logo seven Empire' className='logo' />
+          <img src={logofoter} alt='logo seven Empire' className='logo' />
           <FaFacebook className='icons'/>
           <FaTwitterSquare className='icons'/>
           <FaInstagram className='icons'/>
