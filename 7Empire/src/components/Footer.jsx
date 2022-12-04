@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className='footer'>
         <div className='logo-footer'>
-          <img src={logofoter} alt='logo seven Empire' className='logo' />
+          <img src={logofooter} alt='logo seven Empire' className='logo' />
           <FaFacebook className='icons'/>
           <FaTwitterSquare className='icons'/>
           <FaInstagram className='icons'/>
