@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/logo-7Empire.png'
+import logo from '../assets/7-EMPIRE.png'
 import {FaFacebook, FaTwitterSquare, FaInstagram, FaLinkedin, FaYoutube}  from 'react-icons/fa'
 
 const Footer = () => {
