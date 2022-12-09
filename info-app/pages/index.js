@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import logo from '../public/logo-7Empire.png'
 import logo_footer from '../public/logo-seven.jpg'
 import {FaFacebook, FaTwitterSquare, FaInstagram, FaLinkedin, FaYoutube}  from 'react-icons/fa'
 
