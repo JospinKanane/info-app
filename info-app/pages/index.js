@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import logo_footer from '../public/logo-seven.jpg'
+import logo_footer from '../public/logo.jpg'
 import {FaFacebook, FaTwitterSquare, FaInstagram, FaLinkedin, FaYoutube}  from 'react-icons/fa'
 
 export default function Home() {
