@@ -21,8 +21,6 @@ export default function Home({posts}) {
         <div className='aside row-start-1 row-span-4 col-span-2 p-50'>
           <div className='recent-post'>
           </div>
-          <div className='categories'>
-          </div>
         </div>
       </div>
     </div>
