@@ -1,32 +1,39 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import logo_footer from '../public/logo.jpg'
-import {FaFacebook, FaTwitterSquare, FaInstagram, FaLinkedin, FaYoutube}  from 'react-icons/fa'
+import Social from './Social'
+import Rfooter from './Rfooter'
 
 const Footer = () => {
   return (
     <div className="footer flex flex-col bg-black text-white w-full absolute bottom-0 pt-5">
+      <div className='footer-main flex flex-rows justify-evenly'>
           <div className='footer-social flex flex-row justify-center items-center'>
-            <Image src={logo_footer} alt='logo footer' className='logo_footer cursor-pointer'/>
-            <div className='social-icons flex flex-row justify-center items-center'>
-              <FaFacebook className='icone hover:text-red-600 cursor-pointer'/>
-              <FaTwitterSquare className='icone hover:text-red-600 cursor-pointer'/>
-              <FaInstagram className='icone hover:text-red-600 cursor-pointer'/>
-              <FaLinkedin className='icone hover:text-red-600 cursor-pointer'/>
-              <FaYoutube className='icone hover:text-red-600 cursor-pointer'/>
-            </div>
+            <Link href='/'>
+              <Image src={logo_footer} alt='logo footer' className='logo_footer cursor-pointer mb-2'/>
+            </Link>
+            <Social />
           </div>
-          <ul className='ulFooter flex flex-row gap-20 justify-center p-30 items-center font-bolt'>
+          <ul className='ulFooter flex flex-rows gap-10 justify-end p-10 items-center font-bolt'>
+            <Link href='/'>
               <li className='hover:text-red-600 cursor-pointer'>Home</li>
-              <li className='hover:text-red-600 cursor-pointer'>Blog</li>
+            </Link>
+            <Link href='/about'>
               <li className='hover:text-red-600 cursor-pointer'>About</li>
+            </Link>
+            <Link href='/contact'>
               <li className='hover:text-red-600 cursor-pointer'>Contact</li>
-              <li className='hover:text-red-600 cursor-pointer'>Terms and Conditions</li>
-              <li className='hover:text-red-600 cursor-pointer'>Cookie policy</li>
-              <li className='hover:text-red-600 cursor-pointer'>Distribution</li>
-              <li className='hover:text-red-600 cursor-pointer'>Advertising</li>
+            </Link>
+            <Link href='/adresse'>
+              <li className='hover:text-red-600 cursor-pointer'>Adresse</li>
+            </Link>
+            <Link href='/vacacies'>
               <li className='hover:text-red-600 cursor-pointer'>Jobs</li>
+            </Link>
           </ul>
+      </div>
+      <Rfooter />
       </div>
   )
 }
