@@ -1,8 +1,13 @@
 import React from 'react'
+import moment from 'moment'
 
-const PostCard = () => {
+const PostCard = ({post}) => {
   return (
-    <div>Salut le body !</div>
+    <div>
+      {
+        console.log(post)
+      }
+    </div>
   )
 }
 
