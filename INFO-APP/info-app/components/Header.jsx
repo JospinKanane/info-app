@@ -7,13 +7,13 @@ import Social from './Social'
 
 const Header = () => {
   return (
-    <div className='header flex flex-col '>
+    <div className='header flex flex-col fixed w-full'>
         <div className='head-main flex flex-row items-center justify-between bg-black text-white'>
           <Link href='/'>
             <Image src={logo_footer} alt='logo' className='logo md:w-50 cursor-pointer' />
           </Link>
           <div className='flex gap-2 items-center'>
-            <h2 className='font-bold'>Suivez sur</h2>
+            <p className='follow-us font-bold cursor-default'>Suivez sur</p>
             <Social />
           </div>
         </div>

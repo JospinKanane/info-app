@@ -27,7 +27,7 @@ function signup() {
             <p className="text-red-500 text-xs italic"></p>
           </div>
           <div className="flex items-center justify-between">
-            <button className="bg-black hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+            <button className="bg-black hover:bg-red-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
               Signup
             </button>
             <span className="cursor-default">or</span>

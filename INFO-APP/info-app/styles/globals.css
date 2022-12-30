@@ -4,13 +4,13 @@
 
 
 .logo {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   margin: 30px;
 }
 .logo_footer {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   cursor: pointer;
 }
 .navBar{
@@ -18,8 +18,8 @@
 
 }
 .icone{
-  height: 30px;
-  width: 30px;
+  /* height: 30px;
+  width: 30px; */
   margin: 30px;
 }
 .ulFooter {
@@ -38,6 +38,26 @@
   gap: 50px;
   padding: 50px;
 }
+p {
+  position: relative;
+  font-size: 30px;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, red, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
 
 
 @media all and (max-width: 640px) {

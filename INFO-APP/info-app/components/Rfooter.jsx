@@ -2,7 +2,9 @@ import React from 'react'
 
 function Rfooter() {
   return (
-    <div className='right bg-red-600 text-center w-full'>Copyright © 2022 7-Empire. All rights reserved. Powered by Geeks-Empire</div>
+    <div className='right bg-black border-t border-gray-900 text-center w-full'>
+      &copy;2023 7-Empire. All rights reserved. Powered by Geek-Empire
+    </div>
   )
 }
 

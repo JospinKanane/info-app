@@ -3,32 +3,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 import logo_footer from '../../public/logo.jpg'
 import {FaFacebook, FaTwitterSquare, FaInstagram, FaLinkedin, FaYoutube}  from 'react-icons/fa'
+import Social from '../../components/Social'
 
 
 function dashboard() {
   return (
     <div className="flex flex-col items-center">
-      <header className="flex flex-row items-center justify-between bg-black text-white w-full">
+      <header className="flex flex-row items-center justify-between bg-black text-white w-full fixed">
           <Link href='/auth-7Empire-admin/dashboard'>
             <Image src={logo_footer} alt='logo' className='md:w-50 cursor-pointer h-10 w-10 m-2' />
           </Link>
           <h1 className="font-bold text-4xl cursor-default">Dashboard</h1>
           <div className=' flex flex-row justify-center items-center gap-2 mr-6'>
-              <a href='https://facebook.com'>
-                <FaFacebook className=' hover:text-red-600 cursor-pointer'/>
-              </a>
-              <a href='https://twitter.com'>
-                <FaTwitterSquare className=' hover:text-red-600 cursor-pointer'/>
-              </a>
-              <a href='https://instagram.com'>
-                <FaInstagram className=' hover:text-red-600 cursor-pointer'/>
-              </a>
-              <a href='https://linkedin.com'>
-                <FaLinkedin className=' hover:text-red-600 cursor-pointer'/>
-              </a>
-              <a href='htttps://youtube.com'>
-                <FaYoutube className=' hover:text-red-600 cursor-pointer'/>
-              </a>
+            <Social/>
           </div>
       </header>
       <div className="flex flex-row justify-between w-full">
@@ -56,10 +43,10 @@ function dashboard() {
         </div>
         <div className="flex flex-col gap-2 m-9 mr-60">
           <div className="w-96 h-32">
-            <h1 className="block text-gray-700 font-bold mb-2 text-2xl">Featured Image</h1>
+            <h1 className="block text-gray-700 font-bold mb-2 text-2xl cursor-default">Featured Image</h1>
           </div>
           <div className="w-96 h-20">
-            <h1 className="block text-gray-700 font-bold mb-2 text-2xl">Categories</h1>
+            <h1 className="block text-gray-700 font-bold mb-2 text-2xl cursor-default">Categories</h1>
             <select className="flex flex-row gap-1 shadow border rounded text-gray-700 h-9 w-96 pl-3">
               <option value="cat" name="category">Cat</option>
               <option value="cat-1">Cat-1</option>
@@ -67,7 +54,7 @@ function dashboard() {
             </select>
           </div>
           <div className="w-96 h-48">
-            <h1 className="block text-gray-700 font-bold mb-2 text-2xl">Tags</h1>
+            <h1 className="block text-gray-700 font-bold mb-2 text-2xl cursor-default">Tags</h1>
             <div className="flex flex-row gap-1 shadow border rounded text-gray-700 overflow-auto h-40 pl-3">
                 <label className="flex flex-row items-baseline gap-1" for="tags" >
                   <input type="checkbox" className="mr-1 h-4 w-4 shadow border rounded" name="tags" id="tags" />
@@ -76,7 +63,7 @@ function dashboard() {
             </div>
           </div>
           <div>
-            <button className="bg-black hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-5" type="button">
+            <button className="bg-black hover:bg-red-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-5" type="button">
               Publish
             </button>
           </div>
